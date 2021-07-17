@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+:root{
+    --buttonBackground: white;
+    --borderColor: black;
+}
+body{
+    font-family: 'Zen Loop', cursive;
+}
+header{
+    text-align: center;
+    font-size: larger;
+}
+.player-form{
+    text-align: center;
+}
+.player-form input{
+    margin: 10px;
+    border: 2px solid var(--borderColor);
+    padding: 5px;
+}
+.player-form button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: var(--buttonBackground);
+    border: 2px solid var(--borderColor);
+    padding: 5px 10px;
+}
+.gameboard-container{
+    /* display: grid; */
+}
+.gameboard{
+    display: grid;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gameboard p{
+    border: 1px solid var(--borderColor);
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    font-size: 5rem;
+}
