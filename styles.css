@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --buttonBackground: white;
+    --background: #D9DD6B;
+    --backgroudLight: #ECEFA4;
+    --buttonBackground: #8D2828;
     --borderColor: black;
+    --playBtn: #D54C4C;
+    --gridBackground: #D54C4C;
+    --gridBorder: #8D2828 ;
 }
 body{
     font-family: 'Zen Loop', cursive;
+    background-color: var(--background);
 }
 header{
     text-align: center;
-    font-size: larger;
+    font-size: 2rem;
 }
 .player-form{
     text-align: center;
@@ -17,31 +24,73 @@ header{
 .player-form input{
     margin: 10px;
     border: 2px solid var(--borderColor);
-    padding: 5px;
+    padding: 5px 10px;
+    font-family: 'Zen Loop', cursive;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--backgroudLight);
 }
 .player-form button{
     display: block;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto;
     background-color: var(--buttonBackground);
-    border: 2px solid var(--borderColor);
-    padding: 5px 10px;
+    /* border: 2px solid var(--borderColor); */
+   border: none;
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    width: 10%;
+    padding: 0.4rem;
+}
+#playBtn{
+    font-size: 1.5rem;
+    background-color: var(--playBtn);
+    color: white;
+    border-radius: 2rem;
+}
+#clearBtn{
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--backgroudLight);
+}
+#turnDisplay{
+    display: block;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    color: var(--buttonBackground);
+}
+#result{
+    text-align: center;
+    /* margin-top: 3rem; */
+    font-size: 5rem;
+    color: var(--gridBackground);
 }
 .gameboard-container{
     /* display: grid; */
+    padding: 1rem;
 }
 .gameboard{
     display: grid;
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--gridBackground);
+    border: 5px solid var(--gridBorder);
+    border-radius: 15px;
+    text-align: center;
+
 }
 .gameboard p{
-    border: 1px solid var(--borderColor);
+    border: 5px solid var(--gridBorder);
     margin-block-start: 0;
     margin-block-end: 0;
     text-align: center;
+    line-height: 110px;
     font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--background);
 }
