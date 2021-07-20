@@ -6,12 +6,7 @@ This is an app I made while learning with [The Odin Project](https://www.theodin
 
 
 ### The Challenge
-Users should be able to:
-
-- Add books they are reading or plan to read in future
-- Remove books
-- Change the status of a book to 'read' or 'unread'
-- Save their data on local storage
+Make a tic tac toe game that can be played in the browser
 
 ### Links
 - [Code](https://github.com/Tanay-J/tic-tac-toe)
